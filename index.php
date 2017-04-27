@@ -40,10 +40,15 @@ if(isset ($_GET["Notif"]) && !empty ($_GET["Notif"])){
 <!DOCTYPE html>
 <html>
   <head>
+  
     <meta charset="utf-8">
     <title>- Sarana Informasi Akademik Sekolah -</title>
 	<!-- Icon -->
 	<link rel="shortcut icon" type="image/icon" href="favicon.ico">
+	<!-- CSS Login Background -->
+    <link rel="stylesheet" href="aset/bg/css/reset.css">
+    <link rel="stylesheet" href="aset/bg/css/supersized.css">
+    <link rel="stylesheet" href="aset/bg/css/style.css">
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -56,9 +61,10 @@ if(isset ($_GET["Notif"]) && !empty ($_GET["Notif"])){
     <link rel="stylesheet" href="aset/plugins/iCheck/square/blue.css">
   </head>
   <body class="hold-transition login-page">
+  <div class="page-container">
     <div class="login-box">
       <div class="login-logo">
-        <b>SIAS</b>
+        <font color="#fff"><b>SIAS</b></font>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <b><p class="login-box-msg">Login Form</p></b>
@@ -71,11 +77,11 @@ if(isset ($_GET["Notif"]) && !empty ($_GET["Notif"])){
             <input type="password" name="Password" class="form-control" placeholder="Password" maxlength="255" />
             <span class="form-control-feedback"><i class="fa fa-unlock"></i></span>
           </div>
-          <div class="row">
+          <div class="row"><button type="submit" class="btn btn-primary">Sign In <i class="fa fa-sign-in"></i></button>
             <div class="col-xs-8">
             </div><!-- /.col -->
             <div class="col-xs-4">
-              <button type="submit" class="btn btn-primary">Sign In <i class="fa fa-sign-in"></i></button>
+              
             </div><!-- /.col -->
           </div>
 		  <br>
@@ -87,7 +93,12 @@ if(isset ($_GET["Notif"]) && !empty ($_GET["Notif"])){
 		
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->
-
+  </div>
+    <!-- Javascript Login Background -->
+	<script src="aset/bg/js/jquery-1.8.2.min.js"></script>
+	<script src="aset/bg/js/supersized.3.2.7.min.js"></script>
+	<script src="aset/bg/js/supersized-init.js"></script>
+	<script src="aset/bg/js/scripts.js"></script>
     <!-- jQuery 2.1.4 -->
     <script src="aset/plugins/jQuery/jQuery-2.1.4.min.js"></script>
     <!-- Bootstrap 3.3.5 -->
