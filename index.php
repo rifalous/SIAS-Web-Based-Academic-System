@@ -2,7 +2,7 @@
 session_start();
 include "koneksi.php";
 
-// Notif Error
+// Notif Error Login
 $Err = "";
 if(isset ($_GET ["Err"]) && !empty ($_GET ["Err"])){
 	switch ($_GET ["Err"]){
